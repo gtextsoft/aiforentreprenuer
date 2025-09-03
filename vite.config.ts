@@ -19,4 +19,18 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      external: (id) => {
+        // Exclude large video files from the build bundle
+        return id.includes('.mp4') || id.includes('.webm') || id.includes('.mov');
+      },
+    },
+    // Increase memory limit for build
+    chunkSizeWarningLimit: 1000,
+    // Exclude large assets from processing
+    assetsInlineLimit: 0,
+  },
+  // Don't include video files in assets processing
+  assetsInclude: [],
 }));

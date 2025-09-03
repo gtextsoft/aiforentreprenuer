@@ -87,23 +87,30 @@ const SocialProof = () => {
           <div className="max-w-4xl mx-auto">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
-                <div className="relative">
-                  <video 
-                    className="w-full h-[500px] object-cover"
-                    controls
-                    preload="metadata"
-                    playsInline
-                    webkit-playsinline="true"
-                  >
-                    <source src="/testimonia/DSA AI TESTIMONIA.mp4" type="video/mp4" />
-                    <source src="/testimonia/DSA AI TESTIMONIA.webm" type="video/webm" />
-                    Your browser does not support the video tag.
-                  </video>
+                <div className="relative bg-gradient-to-br from-ai-primary/10 to-ai-secondary/10 h-[500px] flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-cta rounded-full flex items-center justify-center mx-auto mb-6">
+                      <Play className="w-12 h-12 text-black" />
+                    </div>
+                    <h4 className="text-2xl font-bold mb-4">Video Testimonial Available</h4>
+                    <p className="text-muted-foreground mb-6 max-w-md mx-auto">
+                      Watch how Dr. Stephen Akintayo's AI strategies have transformed real businesses and generated incredible results.
+                    </p>
+                    <a 
+                      href="/testimonia/DSA AI TESTIMONIA.mp4" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-8 py-4 bg-gradient-cta text-black font-bold rounded-lg hover:shadow-cta transition-smooth"
+                    >
+                      <Play className="w-5 h-5 mr-2" />
+                      Watch Video Testimonial
+                    </a>
+                  </div>
                 </div>
                 <div className="p-6">
                   <h4 className="text-lg font-bold mb-2">Real Entrepreneur Success Story</h4>
                   <p className="text-muted-foreground">
-                    Watch how Dr. Stephen Akintayo's AI strategies have transformed real businesses and generated incredible results.
+                    Click the button above to watch the full video testimonial in a new tab. This approach ensures optimal performance and compatibility across all devices.
                   </p>
                 </div>
               </CardContent>

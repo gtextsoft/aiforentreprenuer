@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Large media files
+public/testimonia/*.mp4
+public/testimonia/*.webm
+public/testimonia/*.mov
+public/testimonia/*.avi
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
