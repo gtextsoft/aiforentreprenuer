@@ -48,7 +48,7 @@ const SocialProof = () => {
   ];
 
   const logos = [
-    "TechCrunch", "Forbes", "Inc.com", "Entrepreneur", "Business Insider", "Fast Company"
+    "Everyday Houston", "Greatday Houston", "Houston Live", "Houston Happens", "BBC Africa", "Forbes"
   ];
 
   return (
