@@ -92,10 +92,6 @@ const Footer = () => {
               {/* Trust indicators */}
               <div className="flex flex-wrap gap-6">
                 <div className="flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-ai-accent" />
-                  <span className="text-sm opacity-90">30-Day Guarantee</span>
-                </div>
-                <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-ai-accent" />
                   <span className="text-sm opacity-90">2,500+ Alumni</span>
                 </div>
@@ -125,15 +121,15 @@ const Footer = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-ai-accent" />
-                  <span className="text-sm opacity-90">support@ai-summit.com</span>
+                  <span className="text-sm opacity-90">products@stephenakintayo.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-ai-accent" />
-                  <span className="text-sm opacity-90">(555) 123-4567</span>
+                  <span className="text-sm opacity-90">+234 816 790 1719</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-4 h-4 text-ai-accent" />
-                  <span className="text-sm opacity-90">San Francisco, CA</span>
+                  <span className="text-sm opacity-90">512, Westgreen, BLVD., Katy, Texas, USA</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-4 h-4 text-ai-accent" />
