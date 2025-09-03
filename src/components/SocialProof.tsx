@@ -178,7 +178,7 @@ const SocialProof = () => {
         </div>
 
         {/* Trust Indicators */}
-        <Card className="mt-16 bg-gradient-to-r from-success/10 to-trust/10 border-success/20">
+        {/* <Card className="mt-16 bg-gradient-to-r from-success/10 to-trust/10 border-success/20">
           <CardContent className="p-8 text-center">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8">
               <div className="flex items-center gap-3">
@@ -201,7 +201,7 @@ const SocialProof = () => {
               </div>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
     </section>
   );
