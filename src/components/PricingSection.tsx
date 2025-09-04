@@ -79,7 +79,7 @@ const PricingSection = () => {
               </div>
 
               {/* CTA Button */}
-              <a href="https://pay.gtextglobal.com/ai-for-entrepreneur-masterclass/?coupon=AIMASTERCLASS"
+              <a href="https://app.mailingboss.com/lists/68b9bf7a365ba/subscribe"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-cta hover:shadow-cta text-black font-bold text-xl px-12 py-6 rounded-full transition-smooth"

@@ -40,19 +40,22 @@ const Footer = () => {
             Don't miss the opportunity to 10x your revenue with AI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <Button 
-              size="lg" 
-              className="bg-gradient-cta hover:shadow-cta transition-smooth font-bold text-black px-8"
+            <a 
+              href="https://app.mailingboss.com/lists/68b9bf7a365ba/subscribe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-3 bg-gradient-cta hover:shadow-cta transition-smooth font-bold text-black rounded-lg"
             >
               Secure My Seat Now
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-white text-black hover:bg-white hover:text-ai-primary font-semibold"
+            </a>
+            <a 
+              href="https://app.mailingboss.com/lists/68b9bf7a365ba/subscribe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-3 border border-white text-black hover:bg-white hover:text-ai-primary font-semibold rounded-lg transition-smooth"
             >
               View All Packages
-            </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -81,11 +84,14 @@ const Footer = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
                   />
-                  <Button 
-                    className="bg-ai-accent text-black hover:bg-ai-accent/90 font-semibold"
+                  <a 
+                    href="https://app.mailingboss.com/lists/68b9bf7a365ba/subscribe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-2 bg-ai-accent text-black hover:bg-ai-accent/90 font-semibold rounded-md transition-smooth"
                   >
                     Subscribe
-                  </Button>
+                  </a>
                 </div>
               </div>
 

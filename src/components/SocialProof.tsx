@@ -87,30 +87,83 @@ const SocialProof = () => {
           <div className="max-w-4xl mx-auto">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
-                <div className="relative bg-gradient-to-br from-ai-primary/10 to-ai-secondary/10 h-[500px] flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 bg-gradient-cta rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Play className="w-12 h-12 text-black" />
+                <div className="relative">
+                  <video 
+                    className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    webkit-playsinline="true"
+                    onError={(e) => {
+                      console.error('Video failed to load:', e);
+                      // Fallback to external link if video fails
+                      const videoElement = e.target as HTMLVideoElement;
+                      const parentDiv = videoElement.parentElement;
+                      if (parentDiv) {
+                        parentDiv.innerHTML = `
+                          <div class="bg-gradient-to-br from-ai-primary/10 to-ai-secondary/10 h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center">
+                            <div class="text-center">
+                              <div class="w-24 h-24 bg-gradient-cta rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-12 h-12 text-black" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M8 5v14l11-7z"/>
+                                </svg>
+                              </div>
+                              <h4 class="text-2xl font-bold mb-4">Video Testimonial Available</h4>
+                              <p class="text-muted-foreground mb-6 max-w-md mx-auto">
+                                Watch how Dr. Stephen Akintayo's AI strategies have transformed real businesses and generated incredible results.
+                              </p>
+                              <a 
+                                href="/testimonia/DSA AI TESTIMONIA.mp4" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center px-8 py-4 bg-gradient-cta text-black font-bold rounded-lg hover:shadow-cta transition-smooth"
+                              >
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                Watch Video Testimonial
+                              </a>
+                            </div>
+                          </div>
+                        `;
+                      }
+                    }}
+                  >
+                    <source src="/testimonia/DSA AI TESTIMONIA.mp4" type="video/mp4" />
+                    <div className="bg-gradient-to-br from-ai-primary/10 to-ai-secondary/10 h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-24 h-24 bg-gradient-cta rounded-full flex items-center justify-center mx-auto mb-6">
+                          <Play className="w-12 h-12 text-black" />
+                        </div>
+                        <h4 className="text-2xl font-bold mb-4">Video Testimonial Available</h4>
+                        <p className="text-muted-foreground mb-6 max-w-md mx-auto">
+                          Your browser doesn't support video playback. Click the button below to watch the testimonial.
+                        </p>
+                        <a 
+                          href="/testimonia/DSA AI TESTIMONIA.mp4" 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-8 py-4 bg-gradient-cta text-black font-bold rounded-lg hover:shadow-cta transition-smooth"
+                        >
+                          <Play className="w-5 h-5 mr-2" />
+                          Watch Video Testimonial
+                        </a>
+                      </div>
                     </div>
-                    <h4 className="text-2xl font-bold mb-4">Video Testimonial Available</h4>
-                    <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-                      Watch how Dr. Stephen Akintayo's AI strategies have transformed real businesses and generated incredible results.
-                    </p>
-                    <a 
-                      href="/testimonia/DSA AI TESTIMONIA.mp4" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-8 py-4 bg-gradient-cta text-black font-bold rounded-lg hover:shadow-cta transition-smooth"
-                    >
-                      <Play className="w-5 h-5 mr-2" />
-                      Watch Video Testimonial
-                    </a>
-                  </div>
+                  </video>
                 </div>
                 <div className="p-6">
                   <h4 className="text-lg font-bold mb-2">Real Entrepreneur Success Story</h4>
                   <p className="text-muted-foreground">
-                    Click the button above to watch the full video testimonial in a new tab. This approach ensures optimal performance and compatibility across all devices.
+                    Watch Dr. Stephen Akintayo's testimonial video directly above. If you experience any issues, you can also 
+                    <a 
+                      href="/testimonia/DSA AI TESTIMONIA.mp4" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-ai-primary hover:underline ml-1"
+                    >
+                      open the video in a new tab
+                    </a>.
                   </p>
                 </div>
               </CardContent>
